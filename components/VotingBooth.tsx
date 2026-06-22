@@ -270,7 +270,7 @@ export default function VotingBooth() {
                 padding: '4px 10px',
                 borderRadius: '6px',
               }}>
-                {isSpl ? 'SENIOR PATROL LEADER' : 'ASSISTANT SENIOR PATROL LEADER'}
+                {isSpl ? 'STUDENT PUPIL LEADER' : 'ASSISTANT STUDENT PUPIL LEADER'}
               </span>
             </div>
 
