@@ -90,7 +90,7 @@ export default function AdminDashboard() {
       setResetError(''); setResetStep(2); return
     }
     if (resetStep === 2) {
-      if (resetPassword !== 'BMIS1815$$$') { setResetError('Incorrect password.'); return }
+      if (resetPassword !== 'BMIS1815$$#') { setResetError('Incorrect password.'); return }
       setResetting(true)
       const { error: deleteError } = await supabase.from('votes').delete().gt('id', 0)
       if (deleteError) { setResetError('Delete failed: ' + deleteError.message); setResetting(false); return }
